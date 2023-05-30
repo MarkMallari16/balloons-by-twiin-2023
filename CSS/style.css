@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #fdaaba;
+  --accent: #eee8a9;
+  --background: #fdfdfd;
+  --background2: #d4f4ff;
+  --black: #171717;
+  --secondary: #80afdb;
+  --background: #d4f4ff;
+}
+
+/*Navigation*/
+.logo {
+  width: 100%;
+  max-width: 250px;
+}
+
+.navBar {
+  padding: 32px 0;
+}
+
+.nav-link {
+  margin-left: 41px;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/*Hero Section*/
+section.hero {
+  border-radius: 12px;
+  background-color: var(--background2);
+  padding: 60px 0 30px 0;
+}
+
+section.hero .text-land-header {
+  padding-top: 8rem;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 73px;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+section.backdrop .sub-text,
+section.backdrop2 .sub-text {
+  padding-top: 10px;
+  line-height: 1.6rem;
+}
+
+section.hero .hero-img {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+section.hero .hero-make-txt {
+  color: var(--black);
+}
+
+section.hero .hero-party-txt {
+  color: var(--primary);
+}
+
+section.hero .hero-balloons-txt {
+  color: transparent;
+  background-image: linear-gradient(to right, var(--primary), #88A8FC, var(--secondary), var(--accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.buttons {
+  padding-top: 20px;
+}
+
+.btn {
+  padding: 10px 32px;
+  color: var(--black);
+  background-color: var(--primary);
+  border: none;
+}
+
+.btn:hover {
+  color: var(--black);
+  background-color: #d895a3;
+}
+
+/*Testimonial Section*/
+.faq-header {
+  font-size: 3rem;
+}
+
+.quote {
+  color: #d895a3;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.testimonials .card {
+  background-color: var(--accent);
+  padding: 20px;
+}
+
+.stars i {
+  color: #FF9529;
+}
+
+/*Products*/
+.featured-header {
+  font-size: 3rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section.featured {
+  background-color: var();
+  width: 100%;
+}
+
+.price-3,
+.price-4 {
+  padding-top: 1.3rem;
+}
+
+.featured .card {
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.featured .card:hover {
+  translate: 0 -12px;
+
+}
+
+.btn-primary:focus {
+  border: none;
+}
+
+/*Backdrop*/
+section.backdrop .text-backdrop,
+section.backdrop2 .text-backdrop {
+  padding-top: 8rem;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 73px;
+  color: var(--black);
+}
+
+.backdrop-header {
+  font-size: 3rem;
+}
+
+section.backdrop {
+  background-color: var(--background2);
+  border-radius: 12px;
+}
+
+section.backdrop2 {
+  background-color: var(--accent);
+  border-radius: 12px;
+}
+
+/*Frequently Asked Question*/
+section.faq {
+  margin-top: 60px;
+}
+
+.faq-header {
+  font-size: 3rem;
+}
+
+/*Footer*/
+footer {
+  font-weight: 300;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--background2);
+}
+
+.underline {
+  color: var(--black);
+  display: inline-block;
+  padding-bottom: 6px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fdaaba;
+  transition: width 0.4s ease;
+}
+
+.underline:hover::before {
+  width: 100%;
+  right: auto;
+}
+
+.underline:hover {
+  color: #d895a3 !important;
+}
+
+.button-up {
+  color: var(--primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.button-up.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-20px);
+}
+
+.platform a {
+  transition: all 0.3s ease;
+  padding: 6px 10px;
+  background-color: var(--accent);
+  color: var(--black);
+  border-radius: 10px;
+}
+
+.platform a i {
+  font-size: 1.2rem;
+}
+
+.platform a:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  margin-top: 120px !important;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

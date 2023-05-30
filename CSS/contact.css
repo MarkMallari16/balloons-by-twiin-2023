@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #fdaaba;
+  --accent: #fef1a2;
+  --background: #fdfdfd;
+  --accent2: #00deff;
+  --black: #171717;
+  --secondary: #80afdb;
+}
+
+/*Navigation*/
+.logo {
+  width: 100%;
+  max-width: 250px;
+}
+
+.navBar {
+  padding: 32px 0;
+}
+
+.nav-link {
+  margin-left: 41px;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/*Contact Form*/
+.text-header h2 {
+  font-size: 3rem;
+}
+
+.change-color {
+  color: var(--secondary);
+}
+
+.sub-text {
+  font-size: 1rem;
+}
+
+.form {
+  border: none;
+}
+
+.form .btn-primary {
+  padding: 12px 18px;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--black);
+}
+
+.form .btn-primary:hover {
+  color: var(--black);
+  border: 1px solid var(--primary);
+  background-color: #d895a3;
+}
+
+.form .embed-map iframe {
+  width: 500px;
+  height: 200px;
+  padding-right: 50px;
+}
+
+.input:focus {
+  background-color: var(--primary);
+}
+
+textarea {
+
+  resize: none;
+}
+
+/*Footer*/
+.underline {
+  color: var(--black);
+  display: inline-block;
+  padding-bottom: 6px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fdaaba;
+  transition: width 0.4s ease;
+}
+
+.underline:hover::before {
+  width: 100%;
+  right: auto;
+}
+
+.underline:hover {
+  color: #d895a3 !important;
+}
+
+.button-up {
+  color: var(--primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.button-up.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-20px);
+}
+
+.platform a {
+  transition: all 0.3s ease;
+  padding: 6px 10px;
+  background-color: var(--accent);
+  color: var(--black);
+  border-radius: 10px;
+}
+
+.platform a i {
+  font-size: 1.2rem;
+}
+
+.platform a:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  font-weight: 300;
+}
+
+.footer-map {
+  width: 500px;
+}
