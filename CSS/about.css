@@ -35,7 +35,7 @@
   position: relative;
 }
 .our-story-text::before{
-  margin-left: -25px;
+  margin-left: -12px;
   content: "";
   display: block;
   width: 30%;
@@ -46,7 +46,7 @@
   top: 50%;
 }
 .our-story-text::after{
-  margin-right: -25px;
+  margin-right: -12px;
   content: "";
   display: block;
   width: 30%;
@@ -55,6 +55,9 @@
   position: absolute;
   right: 0;
   top: 50%;
+}
+.balloons-logo{
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.2));
 }
 /*customer*/
 img{
@@ -175,5 +178,13 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+@media screen and (max-width: 576px){
+  .our-story-text::before{
+      margin-left: -40px;
+  }
+  .our-story-text::after{
+    margin-right: -40px;
+  }
 }
 

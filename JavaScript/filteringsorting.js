@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var $grid = $('.product-list').isotope({
       itemSelector: '.card',
+      layoutMode: 'fitRows',
       getSortData: {
         price: function (itemElem) {
           return $(itemElem).find('.card-text').data('price');

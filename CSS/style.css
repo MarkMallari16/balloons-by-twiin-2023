@@ -22,6 +22,7 @@
 
 .navBar {
   padding: 32px 0;
+
 }
 
 .nav-link {
@@ -54,16 +55,12 @@ section.backdrop2 .sub-text {
   line-height: 1.6rem;
 }
 
+.hero-party-txt {
+  color: var(--primary);
+}
+
 section.hero .hero-img {
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
-}
-
-section.hero .hero-make-txt {
-  color: var(--black);
-}
-
-section.hero .hero-party-txt {
-  color: var(--primary);
 }
 
 section.hero .hero-balloons-txt {
@@ -246,4 +243,25 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+/*Media Query*/
+@media screen and (max-width: 767px){
+  .text-land-header {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem;
+  }
+
+}
+
+/*Very Small*/
+@media (max-width: 576px) {
+  .buttons .btn , .buttons .btns{
+    display: block;
+    margin: 1rem 0;
+  }
+  .section.hero .text-land-header {
+    margin-top: 0 !important;
+  }
+  
 }

@@ -43,7 +43,10 @@
 .sub-text {
   font-size: 1rem;
 }
-
+.address p{
+  display: flex;
+  align-items: center;
+}
 .form {
   border: none;
 }
@@ -140,4 +143,12 @@ footer {
 
 .footer-map {
   width: 500px;
+}
+@media screen and (max-width: 768px){
+  .address,.embed-map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
 }
