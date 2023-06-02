@@ -207,3 +207,13 @@ footer {
   bottom: 0;
   width: 100%;
 }
+@media(max-width: 1200px){
+  .product-list{
+    margin-left: 10%;
+  }
+}
+@media(max-width: 576px){
+  .product-list{
+    margin-left: 18%;
+  }
+}
