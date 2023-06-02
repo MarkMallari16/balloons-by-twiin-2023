@@ -4,13 +4,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --primary: #fdaaba;
-  --accent: #fef1a2;
-  --background: #fdfdfd;
-  --accent2: #00deff;
+:root{
+  --primary: #FDAABA;
+  --accent: #EEE8A9;
+  --background: #FDFDFD;
+  --background2: #D4F4FF;
+  --accent2: #00DEFF;
   --black: #171717;
-  --secondary: #80afdb;
+  --secondary: #80AFDB;
+  --background: #D4F4FF;
 }
 
 /*Navigation*/
@@ -80,6 +82,15 @@ textarea {
 }
 
 /*Footer*/
+footer {
+  font-weight: 300;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--background2);
+}
+
 .underline {
   color: var(--black);
   display: inline-block;
@@ -138,11 +149,11 @@ textarea {
 }
 
 footer {
-  font-weight: 300;
-}
-
-.footer-map {
-  width: 500px;
+  margin-top: 120px !important;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 @media screen and (max-width: 768px){
   .address,.embed-map{

@@ -115,6 +115,15 @@ img{
   background-color: var(--accent);
 }
 /*Footer*/
+footer {
+  font-weight: 300;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--background2);
+}
+
 .underline {
   color: var(--black);
   display: inline-block;
@@ -122,6 +131,7 @@ img{
   position: relative;
   transition: all 0.4s ease;
 }
+
 .underline::before {
   content: "";
   position: absolute;
@@ -132,25 +142,29 @@ img{
   background-color: #fdaaba;
   transition: width 0.4s ease;
 }
+
 .underline:hover::before {
   width: 100%;
   right: auto;
 }
-.underline:hover{
+
+.underline:hover {
   color: #d895a3 !important;
 }
-/*Arrow up*/
+
 .button-up {
   color: var(--primary);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
 }
+
 .button-up.active {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(-20px);
 }
+
 .platform a {
   transition: all 0.3s ease;
   padding: 6px 10px;
@@ -158,20 +172,15 @@ img{
   color: var(--black);
   border-radius: 10px;
 }
+
 .platform a i {
   font-size: 1.2rem;
 }
+
 .platform a:hover {
   transform: translateY(-10px);
 }
-/*Footer*/
-footer {
-  font-weight: 300;
-}
-/*Footer*/
-footer{
-  background-color: var(--background2);
-}
+
 footer {
   margin-top: 120px !important;
   position: fixed;
