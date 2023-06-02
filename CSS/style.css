@@ -43,7 +43,7 @@ section.hero {
 section.hero .text-land-header {
   padding-top: 8rem;
   font-weight: 800;
-  font-size: 58px;
+  font-size: clamp(3.125rem, 2.5rem + 2vw, 3.625rem);
   line-height: 73px;
   color: var(--black);
   margin-bottom: 20px;

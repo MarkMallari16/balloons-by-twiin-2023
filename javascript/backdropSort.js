@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var $grid = $('.product-list').isotope({
       itemSelector: '.card',
-      layoutMode: 'fitRows',
+     
       getSortData: {
         price: function (itemElem) {
           return $(itemElem).find('.card-text').data('price');
@@ -72,5 +72,6 @@ $(document).ready(function () {
     }
 
     // Initial filtering and sorting
-    $grid.isotope({ filter: '.featured' });
+    $grid.isotope({ filter: '.backdrop' });
+
   });
