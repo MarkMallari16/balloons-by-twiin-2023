@@ -113,7 +113,7 @@ section.products {
 }
 
 .social-media-modal i {
-  font-size: 20px;
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
   color: var(--black);
 }
 
@@ -123,7 +123,9 @@ section.products {
   background-color: var(--primary);
   border: 1px solid var(--primary);
 }
-
+.card{
+  margin-inline: auto;
+}
 .card .btn {
   border: 1px solid var(--primary);
   background-color: var(--primary) !important;
