@@ -35,7 +35,7 @@
 
 /*Contact Form*/
 .text-header h2 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 1.875rem + 2vw, 3rem);
 }
 
 .change-color {
@@ -75,21 +75,22 @@
 .input:focus {
   background-color: var(--primary);
 }
+.textMessage{
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
 
+
+}
 textarea {
   resize: none;
 }
-
 /*Footer*/
 footer {
   font-weight: 300;
 }
-
 /*Footer*/
 footer {
   background-color: var(--background2);
 }
-
 .underline {
   color: var(--black);
   display: inline-block;

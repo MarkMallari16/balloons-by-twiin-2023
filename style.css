@@ -19,12 +19,6 @@
   width: 100%;
   max-width: 250px;
 }
-
-.navBar {
-  padding: 32px 0;
-
-}
-
 .nav-link {
   margin-left: 41px;
 }
@@ -59,10 +53,12 @@ section.backdrop2 .sub-text {
   color: var(--primary);
 }
 
-section.hero .hero-img {
+section.hero .hero-img{
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
-
+.backdrop-img{
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+}
 section.hero .hero-balloons-txt {
   color: transparent;
   background-image: linear-gradient(to right, var(--primary), #88A8FC, var(--secondary), var(--accent));
@@ -142,15 +138,14 @@ section.backdrop .text-backdrop,
 section.backdrop2 .text-backdrop {
   padding-top: 8rem;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 1.875rem + 2vw, 3rem);
   line-height: 73px;
   color: var(--black);
 }
 
 .backdrop-header {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 1.875rem + 2vw, 3rem);
 }
-
 section.backdrop {
   background-color: var(--background2);
   border-radius: 12px;
@@ -251,7 +246,11 @@ footer {
     padding-top: 2rem !important;
     padding-bottom: 2rem;
   }
-
+  .section.backdrop .text-backdrop,
+  section.backdrop2 .text-backdrop {
+   padding: 0;
+  }
+  
 }
 
 /*Very Small*/

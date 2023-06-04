@@ -1,56 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap');
-*{
-    font-family: 'Poppins', sans-serif;
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
-:root{
-    --primary: #FDAABA;
-    --accent: #EEE8A9;
-    --background: #FDFDFD;
-    --background2: #D4F4FF;
-    --accent2: #00DEFF;
-    --black: #171717;
-    --secondary: #80AFDB;
-    --background: #D4F4FF;
+
+:root {
+  --primary: #FDAABA;
+  --accent: #EEE8A9;
+  --background: #FDFDFD;
+  --background2: #D4F4FF;
+  --accent2: #00DEFF;
+  --black: #171717;
+  --secondary: #80AFDB;
+  --background: #D4F4FF;
 }
+
 /*Navigation*/
-.logo{
-    width: 100%;
-    max-width: 250px;
+.logo {
+  width: 100%;
+  max-width: 250px;
 }
-.navBar{
-    padding: 32px 0;
+
+.navBar {
+  padding: 32px 0;
 }
-.nav-link{
-    margin-left: 41px;
+
+.nav-link {
+  margin-left: 41px;
 }
-.nav-link:hover{
-    color: var(--primary);
+
+.nav-link:hover {
+  color: var(--primary);
 }
+
 /*Frequently Asked Question*/
-section.faq{
-    margin-top: 60px;
+section.faq {
+  margin-top: 60px;
 }
-.faq-header{
-    font-size: 3rem;
+
+.faq-header {
+  font-size: clamp(3.125rem, 2.5rem + 2vw, 3.625rem);
 }
+
 .buttons {
-    padding-top: 20px;
-  }
+  padding-top: 20px;
+}
+
 .btn {
-    padding: 10px 32px;
-    color: var(--black);
-    background-color: var(--primary);
-    border: none;
+  padding: 10px 32px;
+  color: var(--black);
+  background-color: var(--primary);
+  border: none;
 }
+
 .btn:hover {
-    color: var(--black);
-    border: 1px solid var(--primary);
-    background-color: #d895a3;
-    border: none;
+  color: var(--black);
+  border: 1px solid var(--primary);
+  background-color: #d895a3;
+  border: none;
 }
-.another-section{
+
+.another-section {
   background: var(--accent);
 }
+
 /*Footer*/
 .underline {
   color: var(--black);
@@ -76,9 +89,10 @@ section.faq{
   right: auto;
 }
 
-.underline:hover{
+.underline:hover {
   color: #d895a3 !important;
 }
+
 /*Arrow up*/
 .button-up {
   color: var(--primary);
@@ -86,11 +100,13 @@ section.faq{
   pointer-events: none;
   transition: all 0.3s;
 }
+
 .button-up.active {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(-20px);
 }
+
 .platform a {
   transition: all 0.3s ease;
   padding: 6px 10px;
@@ -98,20 +114,25 @@ section.faq{
   color: var(--black);
   border-radius: 10px;
 }
+
 .platform a i {
   font-size: 1.2rem;
 }
+
 .platform a:hover {
   transform: translateY(-10px);
 }
+
 /*Footer*/
 footer {
   font-weight: 300;
 }
+
 /*Footer*/
-footer{
+footer {
   background-color: var(--background2);
 }
+
 footer {
   margin-top: 120px !important;
   position: fixed;
@@ -119,4 +140,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
