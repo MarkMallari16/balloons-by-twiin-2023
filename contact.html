@@ -83,17 +83,29 @@
           </div>
         </div>
         <div class="col-md-6 text-sm-start text-center">
-          <form action="https://api.slapform.com/wsFFJw0A5" class="form form-control p-5" id="myForm" method="post">
+          <form action="https://api.slapform.com/wsFFJw0A5" class="form form-control p-5" id="myForm" method="post" onsubmit="return false">
             <h3 class="mb-4 text-sm-start text-center">Send us a Message</h3>
             <div class="first-name mb-4 form-floating">
               <input type="text" id="firstName" name="First_name" placeholder="First name" required
                 class="form-control form-control-sm">
               <label class="text-secondary" for="firstName">First name</label>
+              <div id="validationServerfirstnameFeedback" class="valid-feedback">
+                Correct
+              </div>
+              <div id="validationServerfirstnameFeedback" class="invalid-feedback">
+                Please provide valid first name.
+              </div>
             </div>
             <div class="last-name mb-4 form-floating">
               <input type="text" id="lastName" name="Last_name" placeholder="Last name"
                 class="form-control form-control-sm">
               <label class="text-secondary" for="lastName">Last name*</label>
+              <div id="validationServerfirstnameFeedback" class="valid-feedback">
+                Correct
+              </div>
+              <div id="validationServerlastnameFeedback" class="invalid-feedback">
+                Please provide valid last name.
+              </div>
             </div>
             <div class="email-address mb-4 form-floating">
               <input type="email" id="email" name="email" placeholder="Email address" required
@@ -112,7 +124,7 @@
             <div class="text-area mb-4 ">
               <textarea class="message form-control form-control-sm bg-transparent text-break" id="message"
                 name="message" placeholder="Enter your message here" style="height: 16.4vh"></textarea>
-              
+
             </div>
             <div class="mb-4 d-flex gap-2">
               <input type="checkbox" id="terms" name="termsCheckbox" required>
@@ -120,7 +132,7 @@
                   and
                   Conditions</a></label>
             </div>
-            <div class="button mt-1"><input type="submit" name="submit" value="Send" class="btn btn-primary px-5"></div>
+            <div class="button mt-1"><input type="submit" name="submit" id="submit" value="Send" class="btn btn-primary px-5"></div>
           </form>
         </div>
 
@@ -221,6 +233,8 @@
     crossorigin="anonymous"></script>
   <!--scroll-->
   <script src="scroll.js"></script>
+  <!--validation-->
+  <script src="formValidation.js"></script>
 </body>
 
 </html>
