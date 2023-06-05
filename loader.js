@@ -1,17 +1,14 @@
-var load;
-var showElements;
-var navBar;
-var myVar;
+var loader;
+var elements;
+
 function myFunction() {
-    myVar = setTimeout(showPage, 2000);
+    loader = document.querySelector(".loader");
+    elements = document.querySelector(".show-elements");
+    loader.style.display = "block";
+
+    setTimeout(showPage,1000);
 }
 function showPage() {
-    load = document.querySelector(".loader").style.display = "none";
-
-    showElements = document.querySelectorAll(".navbar,.hero,.testimonials,.container,.featured,.backdrop-header,.backdrop,.backdrop2,.faq,.page-footers");
-
-    for (let count = 0; count < showElements.length; count++) {
-        showElements[count].classList.add("show");
-    }
-
+    loader.style.display = "none"
+    elements.classList.add("show");
 }

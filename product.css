@@ -124,9 +124,11 @@ section.products {
   background-color: var(--primary);
   border: 1px solid var(--primary);
 }
-.card{
+
+.card {
   margin-inline: auto;
 }
+
 .card .btn {
   border: 1px solid var(--primary);
   background-color: var(--primary) !important;
@@ -204,19 +206,20 @@ footer {
 }
 
 footer {
-  margin-top: 120px !important;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
 }
-@media(max-width: 1200px){
-  .product-list{
+
+@media(max-width: 1200px) {
+  .product-list {
     margin-left: 10%;
   }
 }
-@media(max-width: 576px){
-  .product-list{
+
+@media(max-width: 576px) {
+  .product-list {
     margin-left: 18%;
   }
 }

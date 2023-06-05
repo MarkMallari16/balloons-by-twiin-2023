@@ -15,265 +15,279 @@
   <script src="https://kit.fontawesome.com/cb37e64477.js" crossorigin="anonymous"></script>
   <!--css link-->
   <link rel="stylesheet" href="about.css">
-
+  <link rel="stylesheet" href="loader.css">
 </head>
 
-<body>
-  <!---navbar section-->
-  <nav class="navbar navbar-expand-lg ">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="/assets/logo-removebg-preview.png" alt="logo"
-          class="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faqs.html">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--About Section-->
-  <section class="about p-5 text-center">
-    <div class="story container my-5 rounded">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-8 col-lg-6 fw-light">
-          <h2 class="our-story-text text-center fs-1 my-4">Our Story</h2>
-          Balloons by Twiin was founded in August 2022 by lifelong friends Shiela Marie Lara-Hisugan and Ac Montinola.
-          With a passion for DIY balloon styling and a supportive family, they capitalized on the potential by starting
-          the business. Specializing in party supplies, Balloons by Twiin targets young individuals celebrating
-          birthdays and other special occasions.
-        </div>
-        <div class="col-8 col-lg-6">
-          <img src="/assets/logo-removebg-preview.png" alt="logo" class="balloons-logo img-fluid w-75">
-        </div>
-      </div>
-    </div>
-    <div class="owners-section container p-5 rouned">
-      <h2 class="fs-1">Meet the owners</h2>
-      <p class="fw-light">Happy to meet you!</p>
-      <div class="owners d-flex flex-wrap justify-content-center gap-5 mt-4">
-        <div class="owner rounded">
-          <img src="/assets/OwnerImg/shiela_marie.png" alt="owner" class="w-75 ">
-          <h3 class=" fs-4 mt-3">Shiela Marie Lara-Hisugan</h3>
-          <p class="">Owner</p>
-        </div>
-        <div class="owner rounded">
-          <img src="/assets/OwnerImg/ac_monti.png" alt="owner" class="w-75">
-          <h3 class=" fs-4 mt-3">AC Montinola</h3>
-          <p class="">Owner</p>
-        </div>
-      </div>
-    </div>
-    <div class="goal-section container">
-
-      <h2 class="goal-container text-center fs-1 my-3">Our goal</h2>
-      <div class="fw-light text-center">
-        The main goal of their business, owned by Ms. Sheila Marie Lara-Hisugan and Ms. AC Montinola, is to provide
-        high-quality balloon products that cater to various events and celebrations.
-      </div>
-    </div>
-    <div class="gallery container my-4">
-      <div class="row justify-content-center">
-        <div class="customer col-8 col-lg-3 col-md-3 mt-sm-4">
-          <img src="/assets/LatestCustomer/customer1.jpg" alt="customer" class="w-100 rounded">
-        </div>
-        <div class="customer col-8 col-lg-3 col-md-3 mt-4">
-          <img src="/assets/LatestCustomer/customer2.jpg" alt="customer" class="w-100 rounded">
-        </div>
-        <div class="customer col-8 col-lg-3 col-md-3 mt-4">
-          <img src="/assets/LatestCustomer/customer3.jpg" alt="customer" class="w-100 rounded">
-        </div>
-        <div class="customer col-8 col-lg-3 col-md-3 mt-4">
-          <img src="/assets/LatestCustomer/customer4.jpg" alt="customer" class="w-100 rounded">
-        </div>
-        <div class="customer col-8 col-lg-3 col-md-3 mt-4">
-          <img src="/assets/LatestCustomer/customer5.jpg" alt="customer" class="w-100 rounded">
-        </div>
-        <div class="customer col-8 col-lg-3 col-md-3 mt-4">
-          <img src="/assets/LatestCustomer/customer12.jpg" alt="customer" class="w-100 rounded">
-        </div>
-        <div class="customer col-8 col-lg-3 col-md-3 mt-4">
-          <img src="/assets/LatestCustomer/customer9.jpg" alt="customer" class="w-100 rounded">
-        </div>
-        <div class="customer col-8 col-lg-3 col-md-3 mt-4">
-          <img src="/assets/LatestCustomer/customer10.jpg" alt="customer" class="w-100 rounded">
-        </div>
-      </div>
-    </div>
-    </div>
-    <section class="sevice text-center ">
+<body onload="myFunction()">
+  <section class="show-elements">
+    <!---navbar section-->
+    <nav class="navbar navbar-expand-lg ">
       <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="/assets/logo-removebg-preview.png" alt="logo"
+            class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--About Section-->
+    <section class="about p-5 text-center">
+      <div class="story container my-5 rounded">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-8 col-lg-6 fw-light">
+            <h2 class="our-story-text text-center fs-1 my-4">Our Story</h2>
+            Balloons by Twiin was founded in August 2022 by lifelong friends Shiela Marie Lara-Hisugan and Ac Montinola.
+            With a passion for DIY balloon styling and a supportive family, they capitalized on the potential by
+            starting
+            the business. Specializing in party supplies, Balloons by Twiin targets young individuals celebrating
+            birthdays and other special occasions.
+          </div>
+          <div class="col-8 col-lg-6">
+            <img src="/assets/logo-removebg-preview.png" alt="logo" class="balloons-logo img-fluid w-75">
+          </div>
+        </div>
+      </div>
+      <div class="owners-section container p-5 rouned">
+        <h2 class="fs-1">Meet the owners</h2>
+        <p class="fw-light">Happy to meet you!</p>
+        <div class="owners d-flex flex-wrap justify-content-center gap-5 mt-4">
+          <div class="owner rounded">
+            <img src="/assets/OwnerImg/shiela_marie.png" alt="owner" class="w-75 ">
+            <h3 class=" fs-4 mt-3">Shiela Marie Lara-Hisugan</h3>
+            <p class="">Owner</p>
+          </div>
+          <div class="owner rounded">
+            <img src="/assets/OwnerImg/ac_monti.png" alt="owner" class="w-75">
+            <h3 class=" fs-4 mt-3">AC Montinola</h3>
+            <p class="">Owner</p>
+          </div>
+        </div>
+      </div>
+      <div class="goal-section container">
+
+        <h2 class="goal-container text-center fs-1 my-3">Our goal</h2>
+        <div class="fw-light text-center">
+          The main goal of their business, owned by Ms. Sheila Marie Lara-Hisugan and Ms. AC Montinola, is to provide
+          high-quality balloon products that cater to various events and celebrations.
+        </div>
+      </div>
+      <div class="gallery container my-4">
+        <div class="row justify-content-center">
+          <div class="customer col-8 col-lg-3 col-md-3 mt-sm-4">
+            <img src="/assets/LatestCustomer/customer1.jpg" alt="customer" class="w-100 rounded">
+          </div>
+          <div class="customer col-8 col-lg-3 col-md-3 mt-4">
+            <img src="/assets/LatestCustomer/customer2.jpg" alt="customer" class="w-100 rounded">
+          </div>
+          <div class="customer col-8 col-lg-3 col-md-3 mt-4">
+            <img src="/assets/LatestCustomer/customer3.jpg" alt="customer" class="w-100 rounded">
+          </div>
+          <div class="customer col-8 col-lg-3 col-md-3 mt-4">
+            <img src="/assets/LatestCustomer/customer4.jpg" alt="customer" class="w-100 rounded">
+          </div>
+          <div class="customer col-8 col-lg-3 col-md-3 mt-4">
+            <img src="/assets/LatestCustomer/customer5.jpg" alt="customer" class="w-100 rounded">
+          </div>
+          <div class="customer col-8 col-lg-3 col-md-3 mt-4">
+            <img src="/assets/LatestCustomer/customer12.jpg" alt="customer" class="w-100 rounded">
+          </div>
+          <div class="customer col-8 col-lg-3 col-md-3 mt-4">
+            <img src="/assets/LatestCustomer/customer9.jpg" alt="customer" class="w-100 rounded">
+          </div>
+          <div class="customer col-8 col-lg-3 col-md-3 mt-4">
+            <img src="/assets/LatestCustomer/customer10.jpg" alt="customer" class="w-100 rounded">
+          </div>
+        </div>
+      </div>
+      </div>
+      <section class="sevice text-center ">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="service-text text-center font-weight-bold fs-1">What do we offer?</h2>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-8 col-md-6 mb-4">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <img src="/assets/Icon/serviceicon/customs.png" alt="balloon" class="img-fluid"
+                    style="width: 21% !important;">
+                  <p class="mt-3">Add custom messages, names, or logos to selected balloons. Perfect for birthdays,
+                    anniversaries, or corporate events.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-8  col-md-6 mb-4">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <img src="/assets/Icon/serviceicon/air-balloons.png" alt="balloon" class="w-50 img-fluid"
+                    style="width: 17% !important;">
+                  <p class="mt-3">We offer a comprehensive event installation service that will transform your venue
+                    into
+                    an attractive space that aligns perfectly with your vision.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!--Video Reels-->
+      <div class="container py-5">
         <div class="text-center">
-          <h2 class="service-text text-center font-weight-bold fs-1">What do we offer?</h2>
+          <h2 class="balloons-header">Behind the Balloons: Exposing Twiin's Creative Process</h2>
         </div>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-8 col-md-6 mb-4">
-            <div class="card border-0">
-              <div class="card-body text-center">
-                <img src="/assets/Icon/serviceicon/customs.png" alt="balloon" class="img-fluid"
-                  style="width: 21% !important;">
-                <p class="mt-3">Add custom messages, names, or logos to selected balloons. Perfect for birthdays,
-                  anniversaries, or corporate events.</p>
-              </div>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-8 col-lg-4">
+            <video src="/assets/reels/vreels1.mp4" class="w-75 my-5" controls muted></video>
           </div>
-          <div class="col-8  col-md-6 mb-4">
-            <div class="card border-0">
-              <div class="card-body text-center">
-                <img src="/assets/Icon/serviceicon/air-balloons.png" alt="balloon" class="w-50 img-fluid"
-                  style="width: 17% !important;">
-                <p class="mt-3">We offer a comprehensive event installation service that will transform your venue into
-                  an attractive space that aligns perfectly with your vision.</p>
-              </div>
-            </div>
-
+          <div class="col-8 col-lg-4">
+            <video src="/assets/Reels/vreels4.mp4" class="w-75 my-5" controls muted></video>
           </div>
-
+          <div class="col-8 col-lg-4">
+            <video src="/assets/Reels/vreels3.mp4" class="w-75 my-5" controls muted></video>
+          </div>
         </div>
+      </div>
+
+    </section>
+    <section class="cta p-5 m-5 rounded">
+      <div class="container mt-5 text-center position-relative">
+        <div class="text">
+          <h2 class="fs-2">Ready to add some pop to your celebrations?</h2>
+        </div>
+        <div class="button">
+          <p class="fw-light">Explore our collection of party essentials and find the perfect items to make your event
+            unforgettable!</p>
+        </div>
+        <a href="product.html" class="pop-btn btn btn-secondary text-decoration-none p-3 mt-4">Start making your party
+          pop!</a>
+
       </div>
     </section>
-    <!--Video Reels-->
-    <div class="container py-5">
-      <div class="text-center">
-        <h2 class="balloons-header">Behind the Balloons: Exposing Twiin's Creative Process</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-8 col-lg-4">
-          <video src="/assets/reels/vreels1.mp4" class="w-75 my-5" controls muted></video>
-        </div>
-        <div class="col-8 col-lg-4">
-          <video src="/assets/Reels/vreels4.mp4" class="w-75 my-5" controls muted></video>
-        </div>
-        <div class="col-8 col-lg-4">
-          <video src="/assets/Reels/vreels3.mp4" class="w-75 my-5" controls muted></video>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <section class="cta p-5 m-5 rounded">
-    <div class="container mt-5 text-center position-relative">
-      <div class="text">
-        <h2 class="fs-2">Ready to add some pop to your celebrations?</h2>
-      </div>
-      <div class="button">
-        <p class="fw-light">Explore our collection of party essentials and find the perfect items to make your event
-          unforgettable!</p>
-      </div>
-      <a href="product.html" class="pop-btn btn btn-secondary text-decoration-none p-3 mt-4">Start making your party
-        pop!</a>
-
-    </div>
-  </section>
-  <!--Footer Page-->
-  <footer class="page-footers p-5 text-md-left py-5 position-relative">
-    <div class="container  ">
-      <div class="platform d-flex gap-2 justify-content-between align-items-center">
-        <img src="/assets/logo-removebg-preview.png" alt="logo" class="w-50 img-fluid" style="max-width: 200px;">
-        <div class="social-media d-flex justify-content-end align-items-center gap-2">
-          <a href="https://www.facebook.com/balloons.by.twiin"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/balloons.by.twiin/"><i class="bi bi-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="container py-5">
-      <div class="row g-4">
-
-        <div class="col-lg-3 col-md-3 ">
-          <h5 class="font-weight-bold mb-4">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a class="underline mb-1 text-dark fw-light text-decoration-none" href="product.html">Products</a></li>
-            <li><a class="underline mb-1 text-dark text-decoration-none" href="about.html">About</a></li>
-            <li><a class="underline mb-1 text-dark text-decoration-none" href="contact.html">Contact</a></li>
-            <li><a class="underline mb-1 text-dark text-decoration-none" href="faqs.html">FAQ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-3">
-          <h5 class="font-weight-bold mb-4">Product</h5>
-          <ul class="list-unstyled mb-5">
-            <li><a class="underline mb-1 text-dark text-decoration-none product-links" href="product.html">Featured
-                Product</a></li>
-            <li><a class="underline mb-1 text-dark text-decoration-none product-links" href="bouquet.html">Bouquet</a>
-            </li>
-            <li><a class="underline mb-1 text-dark text-decoration-none product-links" href="garland.html">Garland</a>
-            </li>
-            <li><a class="underline mb-1 text-dark text-decoration-none product-links" href="backdrop.html">Panel
-                Backdrop</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-xs-12">
-          <h5 class="font-weight-bold mb-4">Contact</h5>
-          <p class="d-flex align-items-center justify-content-start">
-            <i class="bi bi-telephone pe-1 mx-2 lead"></i>0956 566 5863
-          </p>
-          <p class="d-flex justify-content-start">
-            <i class="bi bi-geo-alt pe-1 mx-2 lead"></i>Camella Springville, Starling Street, Bacoor, Philippines
-          </p>
-          <p class="d-flex align-items-center justify-content-start">
-            <i class="bi bi-envelope pe-1 mx-2 lead"></i>balloonsbytwiin@gmail.com
-          </p>
-        </div>
-        <div class="col-lg-3">
-          <h5 class="mb-4">Step into a world of Wonder!</h5>
-          <div class="footer-map w-100">
-            <iframe class="w-100 h-100"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.760317629215!2d120.99001987421299!3d14.383274782362271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d160c5f9ba7d%3A0xec5dfda617a3b011!2sStarling%20St%2C%20Molino%20IV%2C%20Bacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1684389237220!5m2!1sen!2sph"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="copyright d-flex justify-content-start">
-            <p class="text-start fw-light">&copy; Balloons by Twiin 2023</p>
-          </div>
-          <div class="terms-privacy d-flex justify-content-end align-items-center gap-3">
-            <p class="text fw-light"><a href="termsCondition.html" class="terms text-decoration-none">Terms and
-                Conditions</a></p>
-            <p class="text fw-light"><a href="privacy.html" class="terms text-decoration-none">Privacy Policy</a></p>
+    <!--Footer Page-->
+    <footer class="page-footers p-5 text-md-left py-5 position-relative">
+      <div class="container  ">
+        <div class="platform d-flex gap-2 justify-content-between align-items-center">
+          <img src="/assets/logo-removebg-preview.png" alt="logo" class="w-50 img-fluid" style="max-width: 200px;">
+          <div class="social-media d-flex justify-content-end align-items-center gap-2">
+            <a href="https://www.facebook.com/balloons.by.twiin"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/balloons.by.twiin/"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <section class="p-2 text-secondary text-center">
-    <!--Button up-->
-    <a href="#" class="button-up position-fixed bottom-0 end-0 py-5 px-4 mb-5" style="position: fixed;"><i
-        class="fs-1 bi bi-arrow-up-square-fill"></i></a>
+      <div class="container py-5">
+        <div class="row g-4">
+
+          <div class="col-lg-3 col-md-3 ">
+            <h5 class="font-weight-bold mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a class="underline mb-1 text-dark fw-light text-decoration-none" href="product.html">Products</a>
+              </li>
+              <li><a class="underline mb-1 text-dark text-decoration-none" href="about.html">About</a></li>
+              <li><a class="underline mb-1 text-dark text-decoration-none" href="contact.html">Contact</a></li>
+              <li><a class="underline mb-1 text-dark text-decoration-none" href="faqs.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <h5 class="font-weight-bold mb-4">Product</h5>
+            <ul class="list-unstyled mb-5">
+              <li><a class="underline mb-1 text-dark text-decoration-none product-links" href="product.html">Featured
+                  Product</a></li>
+              <li><a class="underline mb-1 text-dark text-decoration-none product-links" href="bouquet.html">Bouquet</a>
+              </li>
+              <li><a class="underline mb-1 text-dark text-decoration-none product-links" href="garland.html">Garland</a>
+              </li>
+              <li><a class="underline mb-1 text-dark text-decoration-none product-links" href="backdrop.html">Panel
+                  Backdrop</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-xs-12">
+            <h5 class="font-weight-bold mb-4">Contact</h5>
+            <p class="d-flex align-items-center justify-content-start">
+              <i class="bi bi-telephone pe-1 mx-2 lead"></i>0956 566 5863
+            </p>
+            <p class="d-flex justify-content-start">
+              <i class="bi bi-geo-alt pe-1 mx-2 lead"></i>Camella Springville, Starling Street, Bacoor, Philippines
+            </p>
+            <p class="d-flex align-items-center justify-content-start">
+              <i class="bi bi-envelope pe-1 mx-2 lead"></i>balloonsbytwiin@gmail.com
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="mb-4">Step into a world of Wonder!</h5>
+            <div class="footer-map w-100">
+              <iframe class="w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.760317629215!2d120.99001987421299!3d14.383274782362271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d160c5f9ba7d%3A0xec5dfda617a3b011!2sStarling%20St%2C%20Molino%20IV%2C%20Bacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1684389237220!5m2!1sen!2sph"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="copyright d-flex justify-content-start">
+              <p class="text-start fw-light">&copy; Balloons by Twiin 2023</p>
+            </div>
+            <div class="terms-privacy d-flex justify-content-end align-items-center gap-3">
+              <p class="text fw-light"><a href="termsCondition.html" class="terms text-decoration-none">Terms and
+                  Conditions</a></p>
+              <p class="text fw-light"><a href="privacy.html" class="terms text-decoration-none">Privacy Policy</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="p-2 text-secondary text-center">
+      <!--Button up-->
+      <a href="#" class="button-up position-fixed bottom-0 end-0 py-5 px-4 mb-5" style="position: fixed;"><i
+          class="fs-1 bi bi-arrow-up-square-fill"></i></a>
+    </section>
   </section>
+  <!--Loader-->
+  <figure class="loader">
+    <div class="dot white"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </figure>
   <!--Bot-->
-  <!-- <script>
+  <script>
     window.chatbaseConfig = {
       chatbotId: "BoqgJBnYBhEsp1JFW-kX7",
     }
   </script>
   <script src="https://www.chatbase.co/embed.min.js" id="BoqgJBnYBhEsp1JFW-kX7" defer>
-  </script> -->
+  </script>
   <!--Bootsrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="scroll.js"></script>
-
+  <!--loader-->
+  <script src="loader.js"></script>
 </body>
 
 </html>
