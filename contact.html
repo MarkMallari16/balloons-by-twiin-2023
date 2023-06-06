@@ -85,12 +85,11 @@
             </div>
           </div>
           <div class="col-md-6 text-sm-start text-center">
-            <form action="https://api.slapform.com/wsFFJw0A5" class="form form-control p-5" id="myForm" method="post"
-              onsubmit="return false">
+            <form action="https://api.slapform.com/wsFFJw0A5" class="form form-control p-5" id="myForm" method="post">
               <h3 class="mb-4 text-sm-start text-center">Send us a Message</h3>
               <div class="first-name mb-4 form-floating">
                 <input type="text" id="firstName" name="First_name" placeholder="First name" required
-                  class="form-control form-control-sm">
+                  class="form-control form-control-sm" pattern="[a-zA-Z\s]+" title="Please provide valid first name.">
                 <label class="text-secondary" for="firstName">First name</label>
                 <div id="validationServerfirstnameFeedback" class="valid-feedback">
                   Correct
@@ -101,7 +100,7 @@
               </div>
               <div class="last-name mb-4 form-floating">
                 <input type="text" id="lastName" name="Last_name" placeholder="Last name"
-                  class="form-control form-control-sm">
+                  class="form-control form-control-sm" pattern="[a-zA-Z\s]+" title="Please provide valid last name.">
                 <label class="text-secondary" for="lastName">Last name*</label>
                 <div id="validationServerfirstnameFeedback" class="valid-feedback">
                   Correct
@@ -113,7 +112,7 @@
               <div class="email-address mb-4 form-floating">
                 <input type="email" id="email" name="email" placeholder="Email address" required
                   class="form-control form-control-sm ">
-                <label class="text-secondary" for="email">Email</label>
+                <label class="text-secondary" for="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please Provide valid email">Email</label>
               </div>
               <div class="subject form-floating">
                 <select name="subject" id="select" class="form-select mb-4" aria-required="true">
@@ -136,7 +135,7 @@
                     Conditions</a></label>
               </div>
               <div class="button mt-1"><input type="submit" name="submit" id="submit" value="Send"
-                  class="btn btn-primary px-5"></div>
+                  class="btn btn-primary px-5" onclick="validateName()"></div>
             </form>
           </div>
 
@@ -248,7 +247,7 @@
   <!--scroll-->
   <script src="scroll.js"></script>
   <!--validation-->
-  <script src="formValidation.js"></script>
+  <script src="validateName.js"></script>
   <!--loading-->
   <script src="loader.js"></script>
 </body>
