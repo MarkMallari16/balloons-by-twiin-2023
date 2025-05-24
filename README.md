@@ -1,2 +1,1 @@
-This website is rebuild.
-Ballons by Twiin is a client static website that shows ballon products and more.
+This website is a rebuilt version of the Balloons by Twiin client website. It is a static site that showcases a variety of balloon products and services, designed to highlight the brand's creativity and offerings.
