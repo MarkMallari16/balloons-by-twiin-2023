@@ -42,7 +42,9 @@ section.hero .text-land-header {
   color: var(--black);
   margin-bottom: 20px;
 }
-
+.link{
+  width: 18vh;
+}
 section.backdrop .sub-text,
 section.backdrop2 .sub-text {
   padding-top: 10px;
@@ -259,5 +261,8 @@ footer {
   }
   .section.hero .text-land-header {
     margin-top: 0 !important;
+  }
+  .link {
+    width: 100%;
   }
 }

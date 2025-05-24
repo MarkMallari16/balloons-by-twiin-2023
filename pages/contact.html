@@ -21,7 +21,7 @@
   <!---navbar section-->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="/assets/logo-removebg-preview.png" alt="logo"
+      <a class="navbar-brand" href="../index.html"><img src="/assets/logo-removebg-preview.png" alt="logo"
           class="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,19 +30,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="product.html">Products</a>
+            <a class="nav-link" href="../pages/product.html">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="../pages/about.html">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
+            <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contact us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="faqs.html">FAQ</a>
+            <a class="nav-link" href="../pages/faqs.html">FAQ</a>
           </li>
         </ul>
       </div>
@@ -80,15 +80,15 @@
           </div>
         </div>
         <div class="col-md-6 text-sm-start text-center">
-          <form action="https://api.slapform.com/wsFFJw0A5" class="form form-control p-5" id="myForm" method="post">
+          <form id="contact-form" class="form form-control p-5" method="post">
             <h3 class="mb-4 text-sm-start text-center">Send us a Message</h3>
             <div class="first-name mb-4 form-floating">
-              <input type="text" id="firstName" name="First_name" placeholder="First name" required
+              <input type="text" id="firstName" name="first_name" placeholder="First name" required
                 class="form-control form-control-sm">
               <label class="text-secondary" for="firstName">First name</label>
             </div>
             <div class="last-name mb-4 form-floating">
-              <input type="text" id="lastName" name="Last_name" placeholder="Last name"
+              <input type="text" id="lastName" name="last_name" placeholder="Last name"
                 class="form-control form-control-sm">
               <label class="text-secondary" for="lastName">Last name*</label>
             </div>
@@ -102,7 +102,7 @@
               <option value="Feedback">Feedback</option>
               <option value="Inquiries">Inquiries</option>
               <option value="Complaints">Complaints</option>
-              <option value="Custom Products">About Products</option>
+              <option value="About Products">About Products</option>
             </select>
             <div class="text-area mb-4 form-floating">
               <textarea class="message form-control form-control-sm bg-transparent" id="message" name="message"
@@ -110,12 +110,14 @@
               <label class="text-secondary" for="message">Enter your message here</label>
             </div>
             <div class="mb-4 d-flex gap-2">
-              <input type="checkbox" id="terms" name="termsCheckbox" required>
+              <input type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
               <label for="termsCheckbox">I agree to the <a href="termsCondition.html" class="text-decoration-none">Terms
                   and
                   Conditions</a></label>
             </div>
-            <div class="button mt-1"><input type="submit" name="submit" value="Send" class="btn btn-primary px-5"></div>
+            <div class="button mt-1">
+              <input type="submit" name="submit" value="Send" class=" btn btn-primary px-5">
+            </div>
           </form>
         </div>
 
@@ -189,9 +191,10 @@
             <p class="text-start fw-light">&copy; Balloons by Twiin 2023</p>
           </div>
           <div class="terms-privacy d-flex justify-content-end align-items-center gap-3">
-            <p class="text fw-light"><a href="termsCondition.html" class="terms text-decoration-none">Terms and
+            <p class="text fw-light"><a href="../pages/termsCondition.html" class="terms text-decoration-none">Terms and
                 Conditions</a></p>
-            <p class="text fw-light"><a href="privacy.html" class="terms text-decoration-none">Privacy Policy</a></p>
+            <p class="text fw-light"><a href="../pages/privacy.html" class="terms text-decoration-none">Privacy
+                Policy</a></p>
           </div>
         </div>
       </div>
@@ -215,7 +218,10 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <!--scroll-->
-  <script src="scroll.js"></script>
+  <script src="../script/scroll.js"></script>
+  <!--email js-->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="../script/email.js"></script>
 </body>
 
 </html>
