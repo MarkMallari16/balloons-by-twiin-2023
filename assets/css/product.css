@@ -201,7 +201,9 @@ footer {
 .platform a:hover {
   transform: translateY(-10px);
 }
-
+.product-list {
+  position: relative;
+}
 footer {
   margin-top: 120px !important;
   position: fixed;

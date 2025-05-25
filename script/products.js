@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
         div.className = product.classes;
         div.style = product.style;
         div.innerHTML = `
-                <img src="${product.img.src}" class="py-5 card-img-top" alt="${product.img.alt}"
+                <img src="${product.img.src}" class=" card-img-top" alt="${product.img.alt}"
                   data-bs-toggle="modal" data-bs-target="${product.img.modal}">
                 <div class="card-body">
                   <h5 class="card-title" data-name="${product.name}">${product.name}</h5>
