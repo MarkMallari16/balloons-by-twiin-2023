@@ -1,16 +1,20 @@
 $(document).ready(function () {
-  var $grid = $('.product-list').isotope({
-    itemSelector: '.card',
+  var $grid = $('.product-list');
 
-    getSortData: {
-      price: function (itemElem) {
-        return $(itemElem).find('.card-text').data('price');
+  $grid.imagesLoaded(function () {
+    $grid.isotope({
+      itemSelector: '.card',
+      layoutMode: 'fitRows',
+      getSortData: {
+        price: function (itemElem) {
+          return $(itemElem).find('.card-text').data('price');
+        },
+        name: function (itemElem) {
+          return $(itemElem).find('.card-title').data('name');
+        }
       },
-      name: function (itemElem) {
-        return $(itemElem).find('.card-title').data('name');
-      }
-    },
-
+      filter: '.backdrop'
+    });
   });
 
   $('.filter-dropdown').on('click', 'a', function () {
@@ -60,18 +64,11 @@ $(document).ready(function () {
   var sortButtons = $('.sort-dropdown').find('a');
 
   function resetFilterButtons() {
-    filterButtons.each(function () {
-      $(this).removeClass('active');
-    });
+    filterButtons.removeClass('active');
   }
 
   function resetSortButtons() {
-    sortButtons.each(function () {
-      $(this).removeClass('active');
-    });
+    sortButtons.removeClass('active');
   }
-
-  // Initial filtering and sorting
-  $grid.isotope({ filter: '.backdrop' });
 
 });
