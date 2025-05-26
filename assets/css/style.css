@@ -19,6 +19,7 @@
   width: 100%;
   max-width: 250px;
 }
+
 .nav-link {
   margin-left: 41px;
 }
@@ -42,9 +43,11 @@ section.hero .text-land-header {
   color: var(--black);
   margin-bottom: 20px;
 }
-.link{
+
+.link {
   width: 18vh;
 }
+
 section.backdrop .sub-text,
 section.backdrop2 .sub-text {
   padding-top: 10px;
@@ -146,6 +149,7 @@ section.backdrop2 .text-backdrop {
 .backdrop-header {
   font-size: clamp(2.5rem, 1.875rem + 2vw, 3rem);
 }
+
 section.backdrop {
   background-color: var(--background2);
   border-radius: 12px;
@@ -241,27 +245,32 @@ footer {
 }
 
 /*Media Query*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .text-land-header {
     padding-top: 2rem !important;
     padding-bottom: 2rem;
   }
+
   .section.backdrop .text-backdrop,
   section.backdrop2 .text-backdrop {
-   padding: 0;
+    padding: 0;
   }
-  
+
 }
 
 /*Very Small*/
 @media (max-width: 576px) {
-  .buttons .btn , .buttons .btns{
+
+  .buttons .btn,
+  .buttons .btns {
     display: block;
     margin: 1rem 0;
   }
+
   .section.hero .text-land-header {
     margin-top: 0 !important;
   }
+
   .link {
     width: 100%;
   }
