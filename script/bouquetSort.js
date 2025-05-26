@@ -39,7 +39,6 @@ $(document).ready(function () {
   $('.sort-dropdown').on('click', 'a', function () {
     var sortValue = $(this).attr('data-sort');
     var sortAscending = true;
-
     resetSortButtons();
     $(this).addClass('active');
 
